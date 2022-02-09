@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "rich-demo"
 authors = ["Chema Cortés <dextrem@gmail.com>"]
-version = "0.1.1"
-description = ""
+version = "0.1.3"
+description = "Tool to check the graphic features of a terminal using the rich library."
+readme =  "readme.md"
 homepage = "https://github.com/chemacortes/rich-demo"
 license = "MIT"
 classifiers = [

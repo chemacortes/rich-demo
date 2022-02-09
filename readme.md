@@ -1,6 +1,6 @@
 # Rich demo
 
-Tool to check the graphic features of a terminal. Use the [rich library][1]
+Tool to check the graphic features of a terminal using the [rich library][1].
 
 It can be used with [pipx][2]
 
@@ -19,7 +19,7 @@ rich-demo
 
 -----
 
-![Rich-demo screenshot](mintty_tiAfx8nc4v.png)
+![Rich-demo screenshot][3]
 
 -----
 
