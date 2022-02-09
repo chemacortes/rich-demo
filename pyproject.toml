@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rich-demo"
 authors = ["Chema Cortés <dextrem@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 homepage = "https://github.com/chemacortes/rich-demo"
 license = "MIT"
