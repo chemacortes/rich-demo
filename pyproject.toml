@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rich-demo"
 authors = ["Chema Cortés <dextrem@gmail.com>"]
-version = "0.1.8"
+version = "0.1.10"
 description = "Tool to check the graphic features of a terminal using the rich library."
 readme =  "readme.md"
 homepage = "https://github.com/chemacortes/rich-demo"
@@ -25,11 +25,11 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8.0"
-rich = "^13.5.2"
+rich = "^13.7.1"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
-ruff = "^0.0.284"
+black = "^24.4.2"
+ruff = "^0.4.8"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

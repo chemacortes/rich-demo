@@ -2,7 +2,7 @@ from rich.__main__ import make_test_card
 from rich.console import Console
 from rich.panel import Panel
 
-__version__ = "v0.1.8"
+__version__ = "v0.1.10"
 
 
 def run():
