@@ -25,4 +25,4 @@ rich-demo
 
 [1]: https://github.com/Textualize/rich
 [2]: https://github.com/pypa/pipx
-[3]: https://github.com/chemacortes/rich-demo/raw/main/mintty_tiAfx8nc4v.png
+[3]: https://github.com/chemacortes/rich-demo/raw/main/AjcEGgdyue.png

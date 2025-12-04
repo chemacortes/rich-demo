@@ -1,10 +1,10 @@
-[tool.poetry]
+[project]
 name = "rich-demo"
-authors = ["Chema Cortés <dextrem@gmail.com>"]
-version = "0.1.11"
+version = "0.1.15"
 description = "Tool to check the graphic features of a terminal using the rich library."
-readme =  "readme.md"
-homepage = "https://github.com/chemacortes/rich-demo"
+authors = [{ name = "Chema Cortés", email = "dextrem@gmail.com" }]
+requires-python = ">=3.9.0"
+readme = "readme.md"
 license = "MIT"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -14,30 +14,31 @@ classifiers = [
     "Operating System :: Microsoft :: Windows",
     "Operating System :: MacOS",
     "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Typing :: Typed",
 ]
+dependencies = ["rich>=14.2.0,<15"]
 
+[project.urls]
+Homepage = "https://github.com/chemacortes/rich-demo"
 
-[tool.poetry.dependencies]
-python = ">=3.8.0"
-rich = "^13.9.1"
+[project.scripts]
+rich-demo = "rich_demo.__main__:run"
 
-[tool.poetry.group.dev.dependencies]
-black = "^24.8.0"
-ruff = "^0.6.8"
+[project.entry-points."pipx.run"]
+rich-demo = "rich_demo.__main__:run"
+
+[dependency-groups]
+dev = [
+    "black>=25.11.0,<26",
+    "ruff>=0.14.7,<0.15",
+]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-rich-demo = 'rich_demo.__main__:run'
-
-[tool.poetry.plugins."pipx.run"]
-rich-demo = 'rich_demo.__main__:run'
+requires = ["hatchling"]
+build-backend = "hatchling.build"
