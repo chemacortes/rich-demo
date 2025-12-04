@@ -1,17 +1,17 @@
 # Rich demo
 
-Tool to check the graphic features of a terminal using the [rich library][1].
+Tool to check the graphic features of a terminal using the [rich library][rich].
 
-It can be used with [pipx][2]
+If you use [uv][], you can test your terminal directly:
 
 ```bash
-pipx run rich-demo
+uvx rich-demo
 ```
 
-Also, you can install it:
+For a standalone installation:
 
 ```bash
-pipx install rich-demo
+uv tool install rich-demo
 rich-demo
 ```
 
@@ -19,10 +19,10 @@ rich-demo
 
 -----
 
-![Rich-demo screenshot][3]
+![Rich-demo screenshot][demo]
 
 -----
 
-[1]: https://github.com/Textualize/rich
-[2]: https://github.com/pypa/pipx
-[3]: https://github.com/chemacortes/rich-demo/raw/main/AjcEGgdyue.png
+[uv]: https://astral.sh/uv/
+[rich]: https://github.com/Textualize/rich
+[demo]: https://github.com/chemacortes/rich-demo/raw/main/AjcEGgdyue.png
