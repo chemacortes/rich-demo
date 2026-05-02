@@ -1,6 +1,6 @@
 [project]
 name = "rich-demo"
-version = "0.1.15"
+version = "0.2.0"
 description = "Tool to check the graphic features of a terminal using the rich library."
 authors = [{ name = "Chema Cortés", email = "dextrem@gmail.com" }]
 requires-python = ">=3.9.0"
@@ -22,7 +22,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Typing :: Typed",
 ]
-dependencies = ["rich>=14.2.0,<15"]
+dependencies = ["rich>=15.0.0"]
 
 [project.urls]
 Homepage = "https://github.com/chemacortes/rich-demo"
@@ -32,12 +32,6 @@ rich-demo = "rich_demo.__main__:run"
 
 [project.entry-points."pipx.run"]
 rich-demo = "rich_demo.__main__:run"
-
-[dependency-groups]
-dev = [
-    "black>=25.11.0,<26",
-    "ruff>=0.14.7,<0.15",
-]
 
 [build-system]
 requires = ["hatchling"]
